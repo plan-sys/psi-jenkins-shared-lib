@@ -1,4 +1,4 @@
 def call(imageName, releaseNumber) {
-  echo $imageName
-  echo $releaseNumber
+  echo ${imageName}
+  echo ${releaseNumber}
 }
