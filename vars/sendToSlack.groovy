@@ -11,5 +11,5 @@ def call(message, messageType) {
         color = '#FF0000'
     }
     
-    slackSend (color: ${color}, message: "${message}: `${env.JOB_NAME}` [Build #${env.BUILD_NUMBER}] \n(<${env.BUILD_URL}|Open>)")
+    slackSend (color: color, message: "${message}: `${env.JOB_NAME}` [Build #${env.BUILD_NUMBER}] \n(<${env.BUILD_URL}|Open>)")
 }
