@@ -1,8 +1,4 @@
-def sendToSlack(message, messageType) {
-    sendToSlack(message, messageType, "#${env.BUILD_NUMBER}")
-}
-
-def sendToSlack(message, messageType, build) {
+def call(message, messageType, build) {
     
     def color = '#D3D3D3'
 
